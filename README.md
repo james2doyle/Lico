@@ -9,6 +9,10 @@ Pico says, *"Pico is a stupidly simple, blazing fast, flat file CMS"*. Lico aims
 
 I used the static server from the Luvit examples as a base and went from there.
 
+### How to run?
+
+Just do a `luvit server.lua` and you should be up and running. Take a look at the `config.json` to make sure that all the settings are correct for your system.
+
 ### How to create content?
 
 You can understand the basics by looking at the included content directory and just running the `server.lua` file and hitting the index page.
