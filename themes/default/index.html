@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <base href="#{= config.base_url }#">
+  <title>#{= config.site_title }# | #{= current_page.title }#</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <style type="text/css" media="screen">
+    .special {
+      color: #7a9631;
+      font-family: Georgia
+    }
+    footer {
+      position: absolute;
+      bottom: -2em;
+    }
+  </style>
+</head>
+<body>
+  #{= debug("I get logged to the console") }#
+  <strong>date: #{= date(config.date_format) }#</strong>
+  <ul>
+    #{ local i = 1
+    while(pages[i]) do }#
+    <li><a href="#{= pages[i].url }#">#{= pages[i].title }#</a></li>
+    #{ i = i + 1
+    end }#
+    <li><a href="nothing">Fake Page</a></li>
+  </ul>
+  <div class="content">
+    #{= current_page.content }#
+  </div>
+  <hr>
+  <div class="special">
+    #{= current_page.special }#
+  </div>
+  #{= include('partials/footer.html') }#
+</body>
+</html>

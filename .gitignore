@@ -1,0 +1,6 @@
+# dont see my sublime files!
+*.sublime-project
+*.sublime-workspace
+
+# hide the node files I am converting to Lua
+*.js

@@ -1,0 +1,19 @@
+{
+  "author": {
+    "name": "James Doyle",
+    "email": "james2doyle@gmail.com"
+  },
+  "base_url": "http://localhost:8888/",
+  "site_title": "My Site Title",
+  "theme_path": "themes/default/",
+  "content_dir": "content",
+  "date_format": "%Y-%m-%d",
+  "cache_control" : "no-transform,public,max-age=300,s-maxage=900",
+  "site_description": "A recreation of Pico using Luvit",
+  "version": "0.0.1",
+  "main": "server.lua",
+  "engines": {
+    "luvit": "~0.8.2"
+  },
+  "port": 8888
+}
