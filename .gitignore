@@ -2,5 +2,7 @@
 *.sublime-project
 *.sublime-workspace
 
+node_modules
+
 # hide the node files I am converting to Lua
 *.js
