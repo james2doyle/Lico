@@ -42,15 +42,13 @@ Text files are marked up using [Markdown](http://daringfireball.net/projects/mar
 
 At the top of text files you can place a block comment and specify certain attributes of the page. For example:
 
-```html
-<!--
-Title: Welcome
-Description: This description will go in the meta description tag
-Author: Joe Bloggs
-Date: 2013/01/01
-Robots: noindex,nofollow
--->
-```
+    <!--
+    Title: Welcome
+    Description: This description will go in the meta description tag
+    Author: Joe Bloggs
+    Date: 2013/01/01
+    Robots: noindex,nofollow
+    -->
 
 These values will be contained in the `#{= current_page }#` variable in themes (see below).
 
@@ -72,15 +70,13 @@ All themes must include an `index.html` file to define the HTML structure of the
 
 Pages can be used like:
 
-```html
-<ul>
-  #{ local i = 1
-  while(pages[i]) do }#
-  <li><a href="#{= pages[i].url }#">#{= pages[i].title }#</a></li>
-  #{ i = i + 1
-  end }#
-</ul>
-```
+    <ul>
+      #{ local i = 1
+      while(pages[i]) do }#
+      <li><a href="#{= pages[i].url }#">#{= pages[i].title }#</a></li>
+      #{ i = i + 1
+      end }#
+    </ul>
 
 ### Plugins
 

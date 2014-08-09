@@ -1,7 +1,7 @@
 local table = require 'table'
 
 -- import utility functions
-local map, sanitize, split = require('./util')()
+local map, sanitize, split = require('./markdown/util.lua')()
 
 -- protected line storage
 local protected = {}
