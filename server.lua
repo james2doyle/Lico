@@ -20,7 +20,7 @@ app:use(static(publicDir))
 
 -- the main render function
 app:use(function (req, res)
-    res:finish(lico(req, publicDir, config))
+  res:finish(lico(req, publicDir, config))
 end)
 
 -- listen on our config port
